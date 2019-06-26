@@ -1,3 +1,7 @@
+body {
+    background-image: url("./public/assets/images/library_background_copy.jpg")
+}
+
 footer {
     margin-top: 100px;
 }
@@ -10,7 +14,7 @@ nav {
     background-color: rgb(199, 199, 247);
     color: white !important; 
     font-size: 18px;
-    opacity: 20;
+    opacity: 0.9;
 }  
 
 .a {
@@ -18,9 +22,20 @@ nav {
     cursor: grab
 }
 
+h1 {
+    font-family: 'Aguafina Script', cursive; 
+}
+
+button {
+    opacity: 1;
+}
+
 .jumbotron {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    text-align: center;
+    background-color: rgb(199, 199, 247);
+    opacity: 0.8;
+    font-family: 'Open Sans', sans-serif;
+    padding: 1% !important;
 }
 
 #carousel {
@@ -33,12 +48,15 @@ h3 {
     align-content: center;
     text-align: center;
     font-size: 50px !important;
+    color: rgb(139, 224, 220);
 }
 
-.container {
+#poll {
     font-family: 'Open Sans', sans-serif;
     margin-bottom: 30px;
     align-content: center;
+    overflow: hidden;
+    width: 100%;
 }
 
 .card-title {

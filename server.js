@@ -13,6 +13,42 @@ firebase.initializeApp(firebaseConfig);
 
 let db = firebase.firestore()
 
+const votes = db.collections('votes')
+
+if (oneCount) {
+  e.preventDefault()
+  let id = db.collection('votes').doc(One).id
+  db.collection('votes').doc(id).set({
+      Book: One
+    })
+} else if (twoCount) {
+  e.preventDefault()
+  let id = db.collection('votes').doc(Two).id
+  db.collection('votes').doc(id).set({
+      Book: Two
+    })
+} else if (threeCount) {
+  e.preventDefault()
+  let id = db.collection('votes').doc(Three).id
+  db.collection('votes').doc(id).set({
+      Book: Three
+    })
+}
+
+db.collection('votes').onSnapshot( ({ docs }) => {
+    document.querySelector('#counter').innerHTML = ''
+    snap.docs.forEach( doc => {
+        let { One, Two, Three } = doc.data()
+        let docElem = document.createElement('div')
+        docElem.innerHTML = `
+         <h3>${One}</h3>
+         <h3>${Two}</h3>
+         <h3>${Three}</h3>
+         `
+        document.querySelector('#counter').append(docElem)
+    })
+})
+
 firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
     // Handle Errors here.
     var errorCode = error.code;
@@ -183,14 +219,3 @@ function toggleSignIn() {
     }
   }  
 
-document.querySelector('#counter').innerHTML = ''
-users.forEach(({ id, name, email, password }) => {
-  let userDiv = document.createElement('div')
-  userDiv.innerHTML = `
-    <h3>Votes</h3>
-    <h5>${email}</h5>
-    <h5></h5>
-    <h5></h5>
-  `
-  document.querySelector('#userView').append(userDiv)
-})
