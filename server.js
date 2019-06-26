@@ -20,13 +20,7 @@ firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error
     // ...
 });
 
-$(document).ready(function(){
-    $("#myBtn").click(function(){
-      $("#myModal").modal();
-    });
-  });
-
-  function toggleSignIn() {
+function toggleSignIn() {
     if (firebase.auth().currentUser) {
       // [START signout]
       firebase.auth().signOut();
@@ -188,3 +182,15 @@ $(document).ready(function(){
       x.className = "navbar";
     }
   }  
+
+document.querySelector('#counter').innerHTML = ''
+users.forEach(({ id, name, email, password }) => {
+  let userDiv = document.createElement('div')
+  userDiv.innerHTML = `
+    <h3>Votes</h3>
+    <h5>${email}</h5>
+    <h5></h5>
+    <h5></h5>
+  `
+  document.querySelector('#userView').append(userDiv)
+})

@@ -1,3 +1,7 @@
+footer {
+    margin-top: 100px;
+}
+
 nav {
     overflow: hidden;
     position: fixed;
@@ -17,4 +21,31 @@ nav {
 .jumbotron {
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+#carousel {
+    padding: 20px;
+    position: relative;
+}
+
+h3 {
+    font-family: 'Aguafina Script', cursive;    
+    align-content: center;
+    text-align: center;
+    font-size: 50px !important;
+}
+
+.container {
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 30px;
+    align-content: center;
+}
+
+.card-title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card {    
+    background-color: rgb(199, 199, 247) !important;
+    margin: 15px;
 }
