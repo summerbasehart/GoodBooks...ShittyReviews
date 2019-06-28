@@ -26,6 +26,10 @@ h1 {
     font-family: 'Aguafina Script', cursive; 
 }
 
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 button {
     opacity: 1;
 }
