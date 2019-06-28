@@ -19,6 +19,7 @@
 
 <body>
     <div id=”firebaseui-auth-container”></div>
+    <div id="loader">Please Wait..</div>
     <footer>
         <nav id='myNavbar'>
             <ul class="nav justify-content-center">
@@ -38,28 +39,13 @@
                     <a class="nav-link" href="./account.html">Account</a>
                 </li>
                 <li class="nav-item">
-                        <a class="nav-link" href="./tos.html">Terms of Sevice</a>
-                    </li>
+                    <a class="nav-link" href="./tos.html">Terms of Sevice</a>
+                </li>
             </ul>
         </nav>
     </footer>
     <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
-    <script>
-        var uiConfig = {
-            "signInSuccessUrl": "https://goodbooksshittyreviews.firebaseapp.com/",
-            "signInOptions": [
-                firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-                firebase.auth.FacebookAuthProvider.PROVIDER_ID,
-                firebase.auth.EmailAuthProvider.PROVIDER_ID
-            ],
-            "tosUrl": "https://goodbooksshittyreviews.firebaseapp.com/pages/tos.html",
-        };
-        var app = firebase.initializeApp(config);
-        var auth = app.auth();
-        var ui = new firebaseui.auth.AuthUI(auth);
-
-        ui.start("#firebaseui-auth-container", uiConfig);
-    </script>
+    <script src="../../server.js"></script>
 </body>
 
 </html>
