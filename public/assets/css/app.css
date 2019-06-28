@@ -1,5 +1,5 @@
 body {
-    background-image: url("./public/assets/images/library_background_copy.jpg")
+    background-image: url("../images/library_background_copy.jpg")
 }
 
 footer {
@@ -67,3 +67,7 @@ h3 {
     background-color: rgb(199, 199, 247) !important;
     margin: 15px;
 }
+
+.hidden {
+    display: none;
+  }
