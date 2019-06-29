@@ -5,40 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Good Books... Shitty Reviews</title>
-    <link rel="stylesheet" href="../assets/css/app.css" !important>
+    <link rel="stylesheet" href="../app.css" !important>
+    <base href="https://goodbooksshittyreviews.firebaseapp.com/">
+    <link rel="stylesheet" href="./assets/css/app.css" !important>
+    <link type="text/css” rel=”stylesheet” href=”https://www.gstatic.com/firebasejs/ui/0.4.0/firebase-ui-auth.css" />
+    <link href="https://fonts.googleapis.com/css?family=Aguafina+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-        <div class='container d-flex justify-content-center'>
-                <!-- <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Kama Sutra</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                            content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div> -->
-                <div class="card" style="width: 18rem;">
-                    <img src="../assets/images/microphone.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h2 class="card-title">Apologies!</h2>
-                        <p class="card-text">These podcasters have not yet broadcast.
-                                Please standby!</p>
-                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                    </div>
-                </div> -->
-            </div>
+    <div class="jumbotron">
+        <h1 class="display-4">Good Books... Shitty Reviews</h1>
+        <p class="lead">Reading weekly and giving our takes</p>
+        <hr class="my-4">
+        <p>We are Seth and Melissa</p>
+        <p>Weekly Podcast on great books, good books, and terrible books.</p>
+        <p>Reviews are always terrible.</p>
+        <a class="btn btn-primary btn-lg" href="./pages/account.html" role="button">Subscribe</a>
+    </div>
+    <div class='container'>
+             
+    </div>
     <footer>
         <nav id='myNavbar'>
             <ul class="nav justify-content-center">
                 <li class="nav-item">
-                    <a class="nav-link active" href="./home.html">Home</a>
+                    <a class="nav-link active" href="./index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./pastPodcasts.html">Catch Up</a>
+                    <a class="nav-link" href="./home.html">Catch Up</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./futureBooks.html">Upcoming</a>
@@ -50,16 +47,16 @@
                     <a class="nav-link" href="../index.html">Account</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./tos.html">Terms of Service</a>
-                </li>
+                        <a class="nav-link" href="./tos.html">Terms of Service</a>
+                    </li>
             </ul>
         </nav>
     </footer>
+    <script type="text/javascript" src="https://goodbooksshittyreviews.firebaseapp.com/runtime.a66f828dca56eeb90e02.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src='../../server.js'></script>
-
+    <script src='../server.js'></script>
 </body>
 </html>
