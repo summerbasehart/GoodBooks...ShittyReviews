@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Good Books... Shitty Reviews</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../assets/css/app.css" !important>
     <link href="https://fonts.googleapis.com/css?family=Aguafina+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
@@ -83,7 +85,6 @@
                 <div class="card-body">
                     <h5 class="card-title">Kama Sutra</h5>
                     <p class="card-text">Make the conversation real awkward</p>
-                    <button type="button" class="btn btn-secondary btn-lg btn-block" onclick="oneCount();">This One!</button>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
@@ -91,7 +92,6 @@
                 <div class="card-body">
                     <h5 class="card-title">Harry Potter Book 2</h5>
                     <p class="card-text">Let's relive our childhoods. Not old YET.</p>
-                    <button type="button" class="btn btn-secondary btn-lg btn-block" onclick="twoCount()">This One!</button>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
@@ -99,11 +99,13 @@
                 <div class="card-body">
                     <h5 class="card-title">Pride and Prejudice</h5>
                     <p class="card-text">Let's All Learn How to Catch a Rich Husband</p>
-                    <button type="button" class="btn btn-secondary btn-lg btn-block" onclick="threeCount()">This One!</button>
                 </div>
             </div>
         </div>
-        <div>
+        <div id="cast" style="display:none;">
+            Thank You For Your Vote!!
+        </div>
+        <div id="buttons">
             
         </div>
     </div>
@@ -127,7 +129,7 @@
                     <a class="nav-link" href="./account.html">Account</a>
                 </li>
                 <li class="nav-item">
-                    a class="nav-link" href="./tos.html">Terms of Service</a>
+                    <a class="nav-link" href="./tos.html">Terms of Service</a>
                 </li>
             </ul>
         </nav>
@@ -137,5 +139,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src='../../server.js'></script>
+    <script src='../../app.js'></script>
 </body>
 </html>
